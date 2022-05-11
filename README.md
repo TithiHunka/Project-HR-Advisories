@@ -30,3 +30,44 @@ Because there was no machine learning model for this problem in the company, you
 - Machine learning task: Classification
 - Target variable: Status (Employed/Left)
 - Win condition: N/A (best possible model)
+
+## 3) Data Discription
+The Business Intelligence Analysts of the Company provided you three datasets that contain information about past employees and their status (still employed or already left).
+
+### department_data
+This dataset contains information about each department. The schema of the dataset is as follows:
+
+- dept_id – Unique Department Code
+- dept_name – Name of the Department
+- dept_head – Name of the Head of the Department
+
+### employee_details_data
+This dataset consists of Employee ID, their Age, Gender and Marital Status. The schema of this dataset is as follows:
+
+- employee_id – Unique ID Number for each employee
+- age – Age of the employee
+- gender – Gender of the employee
+- marital_status – Marital Status of the employee
+
+### employee_data
+This dataset consists of each employee’s Administrative Information, Workload Information, Mutual Evaluation Information and Status.
+
+#### Target variable
+
+- status – Current employment status (Employed / Left)
+#### Administrative information
+
+- department – Department to which the employees belong(ed) to
+- salary – Salary level with respect to rest of their department
+- tenure – Number of years at the company
+- recently_promoted – Was the employee promoted in the last 3 years?
+- employee_id – Unique ID Number for each employee
+#### Workload information
+
+- n_projects – Number of projects employee has worked on
+- avg_monthly_hrs – Average number of hours worked per month
+- Mutual evaluation information
+- satisfaction – Score for employee’s satisfaction with the company (higher is better)
+- last_evaluation – Score for most recent evaluation of employee (higher is better)
+- filed_complaint – Has the employee filed a formal complaint in the last 3 years?
+
