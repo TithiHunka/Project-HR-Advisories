@@ -111,4 +111,29 @@ We applied the following 7 ML Classifiers on the Data Set:
 - Employed:    10631
 - Left :        3335
 
+### 12) We apply SMOTE on this IMBALANCED Data with TARGET variable status having the following EQUAL counts:
+
+1.	Employed:   8507
+2.	Left:         8507
+
+### 13) Analyze which Algorithm Classifier predicts the BEST RESULT and also check the Computation Time (after SMOTE)
+Again, we got the best result for Basic Model of Random Forest Classifier as compared to other Classifiers with the following results:
+
+###### I.	[ACCURACY SCORE]: 0.978167501789549 
+###### II.	[Processing Time]: 1.8775486946105957 seconds
+###### III.	[F1_SCORE]: 0.9542385596399101
+
+### 14) Declare hyper-parameters to tune the basic Random Forest Classifier after SMOTE:
+We TUNED this model to find the optimal hyper-parameters viz. n_estimators, max_features, max_depth, criterion, and	We got the following results:
+###### a)	cv.best_score_: 0.9820739662741819
+###### b)	cv.best_params_: {'criterion': 'gini', 'max_depth': 20, 'max_features': 'auto', 'n_estimators': 120}
+###### c)	cv.best_estimator_: RandomForestClassifier(class_weight='balanced', max_depth=20, n_estimators=120, random_state=42)
+
+
+### 15) Model Development & Evaluation after Tuning:
+  We fit the best model on our train data and test data, and we got the Average Training and Test Accuracy as follows:
+
+######	Performance Metric of Random Forest Classifier:
+●	[Train Accuracy]: 1.0
+●	[Test Accuracy]: 0.9792412312097352
 
