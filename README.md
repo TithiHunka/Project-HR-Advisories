@@ -52,17 +52,17 @@ This dataset consists of Employee ID, their Age, Gender and Marital Status. The 
 ### employee_data
 This dataset consists of each employee’s Administrative Information, Workload Information, Mutual Evaluation Information and Status.
 
-#### Target variable
+#### |) Target variable
 
 - status – Current employment status (Employed / Left)
-#### Administrative information
+#### ||) Administrative information
 
 - department – Department to which the employees belong(ed) to
 - salary – Salary level with respect to rest of their department
 - tenure – Number of years at the company
 - recently_promoted – Was the employee promoted in the last 3 years?
 - employee_id – Unique ID Number for each employee
-#### Workload information
+#### |||) Workload information
 
 - n_projects – Number of projects employee has worked on
 - avg_monthly_hrs – Average number of hours worked per month
