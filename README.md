@@ -70,4 +70,45 @@ This dataset consists of each employee’s Administrative Information, Workload 
 - satisfaction – Score for employee’s satisfaction with the company (higher is better)
 - last_evaluation – Score for most recent evaluation of employee (higher is better)
 - filed_complaint – Has the employee filed a formal complaint in the last 3 years?
+## 4) Steps of Model Building
+### 1) Installing and importing liberaries
+### 2) establishing connection with SQL Server for data fetching
+### 3) Data Discription and info for all the 3 datasets
+### 4) Auto EDA with sweetviz and pandas profiling to understand the anamolies present in datasets
+### 5) Data Cleaning 
+### 6) EDA on various points to find out which feature is contributing more for employees to leave
+### 7) Data Encoding:
+Here we convert the Categorical Variables including the TARGET Variable into numbers by applying on among the below list: 
+##### a)	Label Encoding
+##### b)	One-Hot Encoding
+##### c)	Ordinal Encoding
+In this case we are taking only 3 categorical variables viz. 'department', 'status', 'salary' as the unseen test data has only these Categorical Columns and the Target Variable status as well
+The target variable should be 1 for the Left and 0 for the Employed
+
+### 8) Split your dataset into train and test data
+
+-  The Train data set after split has 11172 Rows/Records and 9 Columns
+- The Test data set has 2794 Rows/Records and 9 Columns.
+
+### 9) Apply Normalizer Scaling to the Data Set (both Train and Test
+- Normalizer is a scaling Process applied on rows
+-	We did not find Considerable Difference in Results in the ML O/P after Scaling
+
+### 10)  Analyze which Algorithm Classifier predicts the BEST RESULT and also check the Computation Time (Before SMOTE)
+We applied the following 7 ML Classifiers on the Data Set:
+- a) LogisticRegression
+-  b) DecisionTreeClassifier
+- c) RandomForestClassifier
+- d) KNeighborsClassifier
+-  e) GaussianNB(), 
+- f) GradientBoostingClassifier
+- g) XGBClassifier
+###### We got the best result for Basic Model of Random Forest Classifier as compared to other Classifiers with the following results:
+###### [Processing Time]: 2.325659990310669 seconds  ,[F1_SCORE]: 0.9589041095890412, [ACCURACY SCORE]: 0.98067287043665
+
+
+### 11) The Data Set was highly IMBALANCED with TARGET variable status having the following counts
+- Employed:    10631
+- Left :        3335
+
 
