@@ -167,5 +167,9 @@ The unseen data provided has only **10 Columns/Features**, The target column **s
 -	**17 Employees** have NO/BLANK **last_evaluation** values and these include the **3 Employees** whose **department** is **D00-TP** and **1 Employee** whose **department** is **BLANK** 
 
 Since the satisfaction and tenure column values are LEFT/NEGATIVELY SKEWED, we will replace the missing values with the MEDIAN of that column of the entire DATASET
-
-
+### 18) Predict the label values using the earlier trained Random Forest Regression Model
+### 19) Convert the array into a DataFrame
+### 20) Prepare the submission file which should have only two columns viz. the KEY/INDEX column(employee_id) and TARGET column(status)
+### 21) Create a Dataframe with the 9 features which is used to make Predictions, the Predicted Values and Probabilities of the Predicted Values
+### 22) Create a Intermediate Data Frame with only 3 Columns viz. employee_id, Predicted Values and Probabilties of the Predicted Values and then write it into a .csv file
+### 23) To write the final data from dataframe to the submission file which is .csv file without the HEADER and INDEX
