@@ -137,3 +137,35 @@ We TUNED this model to find the optimal hyper-parameters viz. n_estimators, max_
 ●	[Train Accuracy]: 1.0
 ●	[Test Accuracy]: 0.9792412312097352
 
+### 16) Cross-Validating the Models:
+●	We performed cross-validation to estimate the performance of our best model i.e., Random Forest Classifier (RFC) with 20 Folds/Splits validation...
+Observations:
+●	The Training Accuracy for the model is 100% at all folds.
+●	The Average test/Mean Accuracy of the Random Forest Classifier (RCF) model observed was 98.32%.
+●	The Test Accuracy is maximum at the 5th fold at 99.18%
+
+
+### 17) Download the Test Set (Unseen Data Set)
+##### 1) Install PyDrive:
+The first step is to install PyDrive. As we are using a Notebook environment, the installation using PIP will always have the exclamation mark (!) in front.
+##### 2) Authenticate:
+The second step is to authenticate and create a PyDrive client.
+##### 3) Authorizing:
+As soon as you execute this part of the code, the authenticator will ask you to click on the link that appears in your notebook. You must follow this third step, click on the link, authenticate with your Gmail account and copy the generated code. Return to your notebook and paste this code into the requested area. Press Enter, and you’re done, you’re authenticated!
+##### 4)  Getting the file_id:
+In this step, pretend that this is the full URL (it is fake, don’t worry :). Extract only the selected code. This is your file_id.
+##### 5) Load the CSV:
+In this step, tell your notebook now the name of the CSV file you want to load into memory.
+###### 6) Showing the Results:
+In this last step, just use the good-Pandas, convert the .csv file into a Data Frame and display its header.
+
+### 18) Analyzing the Unseen Data Set/Final Test Set and Predict the Final O/P
+The unseen data provided has only **10 Columns/Features**, The target column **status** is not provided, and which is to be **PREDICTED** 
+-	It is similar to the Employee table with **age, gender & marital** columns missing
+-	**2 Employees** with Employee IDs viz. **10040 and 100787** have **NO/BLANK** Department IDs
+-	**3 Employees** with Employee IDs viz. **102113, 102998 and 114160** have BLANK **satisfaction** and **tenure** values and these Employees have **department** as **D00-TP**
+-	**17 Employees** have NO/BLANK **last_evaluation** values and these include the **3 Employees** whose **department** is **D00-TP** and **1 Employee** whose **department** is **BLANK** 
+
+Since the satisfaction and tenure column values are LEFT/NEGATIVELY SKEWED, we will replace the missing values with the MEDIAN of that column of the entire DATASET
+
+
