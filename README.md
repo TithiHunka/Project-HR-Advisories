@@ -17,3 +17,16 @@ Once an employee leaves, he or she is taken an interview with the name “exit i
 - The third is that it is too late by the time the proposed policy changes take effect.
 
 The HR department has hired you as data science consultants. They want to supplement their exit interviews with a more proactive approach.
+
+## 2) consulting Goals
+
+### Your Role
+You are given datasets of past employees and their status (still employed or already left).
+Your task is to build a classification model using the datasets.
+Because there was no machine learning model for this problem in the company, you don’t have quantifiable win condition. You need to build the best possible model.
+
+### Problem Specifics
+- Deliverable: Predict whether an employee will stay or leave.
+- Machine learning task: Classification
+- Target variable: Status (Employed/Left)
+- Win condition: N/A (best possible model)
